@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #E5C4C4;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .card {
+      background-color: white;
+      text-align: center;
+      width: 90%;
+      max-width: 900px;
+      margin-top: 50px;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 30px;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .welcome-content h1 {
+      font-size: 3em;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      padding: 10px;
+    }
+    .search-bar input {
+      flex-grow: 1;
+      padding: 10px;
+      border: none;
+      background: none;
+      font-size: 1em;
+    }
+    .search-bar button {
+      background: none;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 1.2em;
+      color: #555;
+    }
+    .buttons-group {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .action-button {
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .free-trial-button {
+      background-color: #555;
+      color: white;
+      border: none;
+    }
+    .see-more-button {
+      background-color: white;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <section class="card">
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+    </nav>
+
+    <div class="welcome-content">
+      <h1>Welcome!</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." aria-label="Search field">
+        <button aria-label="Search">🔍</button>
+      </div>
+      <div class="buttons-group">
+        <button class="action-button free-trial-button">FREE TRIAL</button>
+        <button class="action-button see-more-button">SEE MORE</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

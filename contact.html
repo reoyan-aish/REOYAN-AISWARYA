@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #E5C4C4;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .card {
+      background-color: white;
+      width: 90%;
+      max-width: 900px;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 50px;
+    }
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 30px;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    form {
+      text-align: center;
+    }
+    .input-group {
+      margin-bottom: 15px;
+    }
+    input, textarea {
+      width: 80%;
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+    .login-button {
+      width: 84%;
+      padding: 15px;
+      background-color: #8c5b4e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <section class="card">
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html">Register</a>
+      <a href="logout.html">Login</a>
+    </nav>
+
+    <h1>Contact Us</h1>
+    <form>
+      <div class="input-group">
+        <input type="text" placeholder="Your Name" required>
+      </div>
+      <div class="input-group">
+        <input type="email" placeholder="Your Email" required>
+      </div>
+      <div class="input-group">
+        <textarea placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="login-button">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>
